@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { MdOutlineMenu } from "react-icons/md";
 
 
 const NavLinks = () => {
@@ -9,16 +10,16 @@ const NavLinks = () => {
   const links = (
     <>
       <li>
-        <Link  className={`link ${pathname === '/' ? 'active' : ''}`} href={"/"}>Home</Link>
+        <Link  className={` ${pathname === '/' ? 'active text-black' : ''}`} href={"/"}>Home</Link>
       </li>
       <li>
-        <Link  className={`link ${pathname === '/projects' ? 'active' : ''}`} href={"/projects"}>Projects</Link>
+        <Link  className={` ${pathname === '/projects' ? 'active text-black' : ''}`} href={"/projects"}>Projects</Link>
       </li>
       <li>
-        <Link className={`link ${pathname === '/skills' ? 'active' : ''}`} href={"/skills"}>Skills</Link>
+        <Link className={` ${pathname === '/skills' ? 'active text-black' : ''}`} href={"/skills"}>Skills</Link>
       </li>
       <li>
-        <Link className={`link ${pathname === '/about' ? 'active' : ''}`} href={"/about"}>About</Link>
+        <Link className={` ${pathname === '/about' ? 'active text-black' : ''}`} href={"/about"}>About</Link>
       </li>
     </>
   );
@@ -28,21 +29,8 @@ const NavLinks = () => {
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {" "}
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
-              </svg>
+              <MdOutlineMenu className="text-amber-500 text-2xl" />
+
             </div>
             <ul
               tabIndex={0}

@@ -2,4 +2,6 @@
 @import "tw-animate-css";
 @plugin "daisyui";
 
- 
+ .active{
+  background: goldenrod;
+ }

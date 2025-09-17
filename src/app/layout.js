@@ -1,5 +1,4 @@
 
-
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import NavLinks from "./ui/nav-links"
@@ -32,7 +31,7 @@ export default function RootLayout({ children }) {
               
             </nav>
           </header>
-          <main className="w-11/12 mx-auto py-10">
+          <main className="w-11/12 mx-auto ">
             {children}
           </main>
        
