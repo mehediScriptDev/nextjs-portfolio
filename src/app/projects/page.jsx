@@ -9,7 +9,7 @@ const Projects = () => {
       <p className="text-center py-5">Feel free to message</p>
 
       <div className="py-10">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-5 gap-y-5 max-w-5xl items-center mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-5 gap-y-5  max-w-5xl items-center mx-auto">
             {/* 1st card */}
           <div className="card w-full bg-base-200 shadow-sm">
             <div className="card-body">

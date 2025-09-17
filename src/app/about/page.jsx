@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const page = () => {
-    return (
-        <div className='w-10/12 mx-auto'>
-            <h1>about section here</h1>
-        </div>
-    );
+const About = () => {
+  return (
+    <div className="">
+      <h1 className="text-3xl font-bold text-amber-500 text-center">
+        {">_Projects"}
+      </h1>
+      <p className="text-center py-5">Feel free to message</p>
+    </div>
+  );
 };
 
-export default page;
+export default About;
