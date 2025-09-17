@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="hero min-h-screen ">
       <div className="hero-content flex-col items-center gap-10 lg:flex-row-reverse">
-        <Image className="rounded-lg shadow-2xl h-auto w-full max-w-sm" src={itachi} alt="heroImage"/>
+        <Image placeholder="blur" className="rounded-lg shadow-2xl h-auto w-full max-w-sm" src={itachi} alt="heroImage"/>
 
         
         {/* className="" */}
