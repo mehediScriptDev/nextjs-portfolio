@@ -1,20 +1,24 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
+
 const NavLinks = () => {
+    const pathname = usePathname();
   const links = (
     <>
       <li>
-        <Link href={"/"}>Home</Link>
+        <Link  className={`link ${pathname === '/' ? 'active' : ''}`} href={"/"}>Home</Link>
       </li>
       <li>
-        <Link href={"/projects"}>Projects</Link>
+        <Link  className={`link ${pathname === '/projects' ? 'active' : ''}`} href={"/projects"}>Projects</Link>
       </li>
       <li>
-        <Link href={"/skills"}>Skills</Link>
+        <Link className={`link ${pathname === '/skills' ? 'active' : ''}`} href={"/skills"}>Skills</Link>
       </li>
       <li>
-        <Link href={"/about"}>About</Link>
+        <Link className={`link ${pathname === '/about' ? 'active' : ''}`} href={"/about"}>About</Link>
       </li>
     </>
   );
@@ -44,18 +48,20 @@ const NavLinks = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-                {links}
+              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-amber-500 text-xl lg:text-3xl lg:font-bold ">
+            {"<MEHEDI/>"}
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-           {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+         <button className="btn bg-amber-500 text-black">
+            Login
+         </button>
         </div>
       </div>
     </div>
